@@ -50,7 +50,7 @@
     async function obterNumeros() {
       try {
         console.log('Iniciando requisição ao webhook...');
-        const response = await fetch('https://fluxo.cfdojon.work/webhook-test/presspaulo', {
+        const response = await fetch('https://fluxo.cfdojon.work/webhook-test/zapvendas', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json'
@@ -80,7 +80,7 @@
       } catch (error) {
         console.error('Erro ao obter os números ou redirecionar:', error);
         // URL de fallback em caso de erro
-        window.location.href = 'https://api.whatsapp.com/send?phone=559999999&text=Oi,%20tudo%20bem%20gata%20?';
+        window.location.href = 'https://api.whatsapp.com/send?phone=5512988981521&text=Oi,%20tudo%20bem%20gata%20?';
       }
     }
 
